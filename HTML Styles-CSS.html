@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<style>
+ 	 body {background-color:lightgray}
+ 	 h1   {color:blue
+ 	 font-family:verdana;
+ 	 font-size:300%;
+ 	}
+ 	p{color:green
+ 	font-family:courier;
+    font-size:160%;
+  	border:1px solid black;
+  	<!--border定义一个可见的边框,padding用来定义一个边界,marge用来定义一个边框外面的空白-->
+  	padding: 10px;
+  	margin: 30px
+
+  	}	
+    p#p01 {
+  		color:blue;
+  	}
+  	p.error {
+    color:red;
+	}
+	</style>
+	</head>
+
+	<body>
+  	<h1>This is a heading</h1>
+  	<h2 style="color:blue">This is a Blue Heading</h2>
+  	<p>This is a paragraph.</p>
+  	
+  	<p id="p01">I am different</p>
+  	<p class="error">I am different too.</p>
+
+  	<pre>
+  		<strong style="font-size:300%" >Styling can be added to HTML elements in 3 ways:</strong>
+  		Inline - using a style attribute in HTML elements
+        Internal - using a <style> element in the HTML <head> section
+        External - using one or more external CSS files
+        The most common way to add styling, is to keep the styles in separate CSS files. But, in this tutorial, we use internal styling, because it is easier to demonstrate, and easier for you to try it yourself.
+  	</pre>
+  	<!--CSS styling's syntax:element { property:value; property:value } Mutiple styles are separated with semicolon. -->
+
+	</body>
+
+</html>

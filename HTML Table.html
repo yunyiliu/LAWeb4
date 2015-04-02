@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+/*设置表格里边字体的颜色*/
+thead {color:green;}
+tbody {color:blue;}
+tfoot {color:red;}
+table,th,td
+{
+	border:1px solid black;
+	/*If you want the borders to collapse into one border, add CSS border-collapse*/
+	border-collapse: collapse;
+}
+th,td{
+	padding:5px;
+/*	Cell padding specifies the space between the cell content and its borders.
+
+If you do not specify a padding, the table cells will be displayed without padding.
+
+To set the padding, use the CSS padding property:*/
+}
+
+/*设置文字靠左*/
+th{
+	text-align: left;
+}
+table {
+    border-spacing: 15px;
+}
+
+table#t01 {
+    width: 100%;    
+    background-color: #f1f1c1;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th	{
+    background-color: black;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+	<table border="1" style="width:100%">
+		<tr>
+			<th>Time</th>
+			<th>Nmae</th>
+			<th>To do list</th>
+		</tr>
+
+		<tr>
+			<td>moring</td>
+			<td>Ellen</td>
+			<td>pingpang</td>
+		</tr>
+		<tr>
+			<td>noon</td>
+			<td>Ailey</td>
+			<td>tennis</td>
+		</tr>
+		<tr>
+			<td>night</td>
+			<td>YY</td>
+			<td>basketball</td>
+		</tr>
+
+	</table>
+
+	<h2>Cell that spans two columns:</h2>
+	<table style="width:100%">
+		<tr>
+	    <th>Name</th>
+	    <th colspan="2">Telephone</th>
+	</tr>
+	<tr>
+	    <td>Bill Gates</td>
+	    <td>555 77 854</td>
+	    <td>555 77 855</td>
+	</tr>
+	</table>
+<h3>Cell that spans two rows:</h2>
+<table style="width:100%">
+	<tr>
+		<th>Name:</th>
+		<td>Bill Gates</td>
+  </tr>
+  <tr>
+  	<th rowspan="2">Telephone:</th>
+    <td>555 77 854</td>
+  </tr>
+  <tr>
+  	<td>555 77 855</td>
+  </tr>
+</table>
+
+<!-- To add a caption to a table, use the <caption> tag -->
+<!-- The <caption> tag must be inserted immediately after the <table> tag -->
+<table style="width:100%">
+	<caption>Monthly savings</caption>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$50</td>
+    </tr>
+</table>
+
+
+<table >
+    <tr>
+    	<th>First Name</th>
+    	<th>Last Name</th>		
+    	<th>Points</th>
+    </tr>
+    <tr>
+    	<td>Jill</td>
+    	<td>Smith</td>		
+   	 <td>50</td>
+    </tr>
+    <tr>
+  		<td>Eve</td>
+    	<td>Jackson</td>		
+   		<td>94</td>
+    </tr>
+    <tr>
+    	<td>John</td>
+    	<td>Doe</td>		
+    	<td>80</td>
+    </tr>
+</table>
+<table id="t01">
+    <tr>
+    	<th>First Name</th>
+    	<th>Last Name</th>		
+    	<th>Points</th>
+    </tr>
+    <tr>
+    	<td>Jill</td>
+    	<td>Smith</td>		
+   	 <td>50</td>
+    </tr>
+    <tr>
+  		<td>Eve</td>
+    	<td>Jackson</td>		
+   		<td>94</td>
+    </tr>
+    <tr>
+    	<td>John</td>
+    	<td>Doe</td>		
+    	<td>80</td>
+    </tr>
+</table>
+</body>
+</html>
+
+<!-- Tables are defined with the <table> tag.
+
+Tables are divided into table rows with the <tr> tag.
+
+Table rows are divided into table data with the <td> tag.
+
+A table row can also be divided into table headings with the <th> tag -->

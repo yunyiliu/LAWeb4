@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	ul#menu li {
+    display:inline;
+}
+ /*With a little extra style, you can make it look like a menu*/
+ul#menu {
+    padding: 0;
+}
+
+ul#menu li {
+    display: inline;
+}
+
+ul#menu li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    background-color: orange;
+}
+</style>
+</head>
+<body>
+<h2>Unordered List with Default Bullets</h2>
+<ul>
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+	<!--style 可以用来改变每个list unit 前面的符号：圆，方，圈-->
+<ul style="list-style-type:disc">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+<ul style="list-style-type:circle">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+<ul style="list-style-type:square">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+<ul style="list-style-type:none">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+<ol>
+	<li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+<!-- A type attribute can be added to an ordered list, to define the type of the marker
+type="1"	The list items will be numbered with numbers (default)
+type="A"	The list items will be numbered with uppercase letters
+type="a"	The list items will be numbered with lowercase letters
+type="I"	The list items will be numbered with uppercase roman numbers
+type="i"	The list items will be numbered with lowercase roman numbers -->
+
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+<ol type="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+<!-- A description list, is a list of terms, with a description of each term.
+
+The <dl> tag defines a description list.
+
+The <dt> tag defines the term (name), and the <dd> tag defines the data (description). -->
+<h2>A Description List</h2>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<!-- List can be nested (lists inside lists). -->
+<ul>
+	<li>Coffee</li>
+	<li>Tea
+    <ul>
+    <li>Black tea</li>
+    <li>Green tea</li>
+    </ul>
+    </li>
+    <li>Milk</li>
+</ul>
+
+<!-- HTML lists can be styled in many different ways with CSS.One popular way, is to style a list to display horizontally: -->
+<h2>Horizontal List</h2>
+
+<ul id="menu">
+	<li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>PHP</li>
+</ul>  
+<h3>Horizontal List</h2>
+
+<ul id="menu">
+    <li><a href="/html/default.asp">HTML</a></li>
+    <li><a href="/css/default.asp">CSS</a></li>
+    <li><a href="/js/default.asp">JavaScript</a></li>
+    <li><a href="/php/default.asp">PHP</a></li>
+</ul>  
+
+</body>
+</html>

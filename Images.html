@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<style>
+	img {
+	    width:100%;
+	}
+	</style>
+	</head>
+	<body>
+		<p>It is better to use the style attribute (instead of the width and height attributes), because it prevents internal or external styles sheets to change the default size of an image:</p>
+
+	<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px">
+	<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+
+
+	<h2>Spectacular Mountains</h2>
+	<img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px">
+
+<!--src代表的是图片的网址，alt是图片的额外信息， 会在图片显示不出来的事后出现在图片上，style是图片的格式width:304px;height:228px格式表示的另外一种方法是：<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">直接在attribute里边表示；但是用style的表示方法可以避免将要显示的style被default的size改变-->
+<!-- 下面一段话是使用一个图片作为连接 -->
+	<a href="default.asp">
+		<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0">
+	</a>
+<!-- create an image map, with clickable areas: -->
+<!-- The <area> tag defines an area inside an image-map (an image-map is an image with clickable areas). -->
+
+
+	<p>Click on the sun or on one of the planets to watch it closer:</p>
+
+	<img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px">
+
+	<map name="planetmap">
+		<area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+		<area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+		<area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+	</map>
+<!-- The <area> element is always nested inside a <map> tag. -->
+
+
+<!-- et an image float to the left or right of a paragraph
+ -->
+	<img src="planets.gif" width="145" height="126" alt="Planets"
+	usemap="#planetmap">
+
+	<map name="planetmap">
+		<area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+		<area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+		<area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+	</map>
+	<p>
+	 	<img src="smiley.gif" alt="Smiley face"  style="float:left;width:42px;height:42px">
+	 	A paragraph with an image. A paragraph with an image.
+	 	A paragraph with an image. A paragraph with an image.
+	 	A paragraph with an image. A paragraph with an image.    
+	</p>
+
+	<p>The image floats to the left of the text.</p>
+
+	<p>Please use the CSS float property. The align attribute is deprecated in HTML 4, and not supported in HTML5.</p>
+	</body>
+</html>
