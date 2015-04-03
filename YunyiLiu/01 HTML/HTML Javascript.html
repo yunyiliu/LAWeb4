@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- The script tag is used to define a client side script, such as a JavaScript. -->
+<!-- The script element either contains scripting statements or it points to an external script file through the src attribute. Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content. -->
+
+<!-- The script below writes Hello JavaScript! into an HTML element with id="demo": -->
+	<p id="demo"></p>
+	<script>
+	document.getElementById("demo").innerHTML = "Hello JavaScript!";
+	</script> 
+
+<!-- The noscript tag is used to provide an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripting.
+
+The noscript element can contain all the elements that you can find inside the body element of a normal HTML page.
+
+The content inside the noscript element will only be displayed if scripts are not supported, or are disabled in the user's browser: -->
+	<p id="demo"></p>
+	<script>
+	document.getElementById("demo").innerHTML = "Hello JavaScript!";
+	</script>
+
+	<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+	<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+
+	<!-- JavaScript can change HTML content, change HTML styles, change HTML attributes -->
+	<p> JavaScript can change the content of an HTML element:</p>
+	<button type="button" onclick="myFunction()">Click me!</button>
+	<p id="demo">this is a demonstration.</p>
+	<script>
+	function myFunction() { 
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+
+
+</script>
+</body>
+</html>
